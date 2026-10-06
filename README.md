@@ -58,12 +58,6 @@ Modelos incluidos:
 
 El sistema de actualización mediante USB será una de las primeras funciones que utilizaremos, porque servirá para recibir las correcciones durante toda la campaña.
 
-Cada actualización tendrá un identificador de seguimiento, por ejemplo:
-
-```text
-UPD-BETA-02
-```
-
 El paquete autorizado tendrá un nombre similar a:
 
 ```text
