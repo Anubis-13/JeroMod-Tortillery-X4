@@ -6,7 +6,7 @@ Este repositorio privado servirá para organizar las pruebas, comunicar incidenc
 
 No es necesario saber programación, Klipper, Linux ni electrónica. Cada prueba tendrá instrucciones sencillas y se realizará utilizando la impresora y su pantalla de forma normal.
 
-> ⏳ **La campaña todavía no ha comenzado.** No es necesario hacer nada hasta recibir la primera prueba.
+> ⏳ **El testeo todavía no ha comenzado.** No es necesario hacer nada hasta recibir la primera prueba.
 
 ## 📥 Descarga de la imagen inicial
 
@@ -38,7 +38,7 @@ SHA-256: 46CD224D14F29F1B7F8D8BFCF6D7E5703B4784E7237ED7DD1A64DB7002FAE479
 
 ## 📋 Versión inicial
 
-Estas son las versiones de cada módulo al comenzar la campaña:
+Estas son las versiones de cada módulo al comenzar el testeo:
 
 ```text
 Imagen: JeroMod-Tortillery X4 BETA-01
@@ -56,7 +56,7 @@ Modelos incluidos:
 
 ## 🔄 Actualizaciones de la beta
 
-El sistema de actualización mediante USB será una de las primeras funciones que utilizaremos, porque servirá para recibir las correcciones durante toda la campaña.
+El sistema de actualización mediante USB será una de las primeras funciones que utilizaremos, porque servirá para recibir las correcciones durante todo el testeo.
 
 El paquete autorizado tendrá un nombre similar a:
 
@@ -75,7 +75,7 @@ Si la pantalla indica que un archivo no es válido, pertenece a otro modelo o no
 
 > 🚫 Utilizad únicamente el paquete autorizado para esa prueba. No lo renombréis, no lo modifiquéis y no añadáis otros archivos o scripts al USB.
 
-Después de actualizar no será necesario repetir toda la campaña. Se indicarán las pruebas afectadas y las comprobaciones relacionadas que deban repetirse.
+Después de actualizar no será necesario repetir todo el testeo. Se indicarán las pruebas afectadas y las comprobaciones relacionadas que deban repetirse.
 
 Las pruebas de recuperación, rollback o interrupción deliberada de una actualización se prepararán aparte. **No deben realizarse por iniciativa propia.**
 
@@ -290,7 +290,7 @@ No compartáis fuera del grupo las imágenes, actualizaciones, enlaces ni docume
 
 ## 🧰 Pruebas especiales
 
-Las siguientes pruebas se dejarán para fichas o campañas específicas:
+Las siguientes pruebas se dejarán para fichas o fases específicas del testeo:
 
 - impresión completa y todas sus variantes;
 - pausa, reanudación y cambio de filamento;
