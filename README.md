@@ -27,13 +27,14 @@ JeroMod_Tortillery_X4_BETA-01-1.0.5-0.0.23-0.164-8GB.img
 Comprobación del archivo:
 
 ```text
-Tamaño esperado: 7.818.182.656 bytes
-SHA-256: PENDIENTE DE AÑADIR
+Tamaño: 7.818.182.656 bytes
+Tamaño aproximado: 7,281 GiB
+SHA-256: 46CD224D14F29F1B7F8D8BFCF6D7E5703B4784E7237ED7DD1A64DB7002FAE479
 ```
 
 > 🔒 Descargad la imagen únicamente desde el enlace publicado aquí. Antes de grabarla en la eMMC, comprobad que el nombre, el tamaño y el SHA-256 coincidan.
 
-## 📋 Versión inicial
+## 📋 Versión inicial(estas son las versiones de cada módulo de inicio )
 
 ```text
 Imagen: JeroMod-Tortillery X4 BETA-01
@@ -41,6 +42,7 @@ Firmware base: Tortillery v1.0.5
 Sistema: JeroMod SYS v0.0.23
 Pantalla: JeroMod TFT v0.164
 ```
+
 
 Modelos incluidos:
 
