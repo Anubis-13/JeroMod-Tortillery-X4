@@ -61,7 +61,7 @@ El sistema de actualización mediante USB será una de las primeras funciones qu
 Cada actualización aparecerá identificada con un nombre como:
 
 ```text
-UPD-BETA-02
+JM-T-X4_UPDATE_vX.X.XXX.mksp
 ```
 
 Cada actualización deberá probarla **todo el grupo**, aunque esté destinada únicamente a la X4 Pro o a la X4 Plus. Esto permitirá comprobar tanto la instalación correcta como la protección entre modelos.
