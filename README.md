@@ -2,7 +2,7 @@
 
 Gracias por participar en las pruebas de **JeroMod-Tortillery X4**.
 
-Este repositorio privado servirá para organizar las pruebas, comunicar incidencias y comprobar las correcciones que se publiquen durante la beta. El grupo está formado por personas conocidas y el contenido no debe compartirse fuera de él.
+Este repositorio privado servirá para organizar las pruebas, comunicar incidencias y comprobar las correcciones que se publiquen durante la beta. El grupo es reducido para una mejor trabajo y el contenido no debe compartirse fuera de él has el momento de tener una imagen candidata para lanzamiento.
 
 No es necesario saber programación, Klipper, Linux ni electrónica. Cada prueba tendrá instrucciones sencillas y se realizará utilizando la impresora y su pantalla de forma normal.
 
