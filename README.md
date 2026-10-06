@@ -13,26 +13,26 @@ No es necesario saber programación, Klipper, Linux ni electrónica. Cada prueba
 La imagen principal se distribuirá mediante un enlace privado externo. Debido a su tamaño, **no estará alojada directamente en GitHub**.
 
 **Enlace de descarga:**
-
+> 🔒 La imagen beta 01... se descarga del enlace publicado aquí. 
 ```text
 PENDIENTE DE AÑADIR
 ```
-
 Archivo que debéis recibir:
 
 ```text
 JeroMod_Tortillery_X4_BETA-01-1.0.5-0.0.23-0.164-8GB.img
 ```
 
-Comprobación del archivo:
 
+Comprobación del archivo:
+> 🔒 Antes de grabarla en la eMMC, comprobad que el nombre, el tamaño y el SHA-256 coincidan.
 ```text
 Tamaño: 7.818.182.656 bytes
 Tamaño aproximado: 7,281 GiB
 SHA-256: 46CD224D14F29F1B7F8D8BFCF6D7E5703B4784E7237ED7DD1A64DB7002FAE479
 ```
 
-> 🔒 Descargad la imagen únicamente desde el enlace publicado aquí. Antes de grabarla en la eMMC, comprobad que el nombre, el tamaño y el SHA-256 coincidan.
+
 
 ## 📋 Versión inicial(estas son las versiones de cada módulo de inicio )
 
