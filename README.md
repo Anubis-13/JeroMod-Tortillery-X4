@@ -34,9 +34,11 @@ SHA-256: 46CD224D14F29F1B7F8D8BFCF6D7E5703B4784E7237ED7DD1A64DB7002FAE479
 
 
 
-## 📋 Versión inicial(estas son las versiones de cada módulo de inicio )
+## 📋 Versión inicial:
 
 ```text
+Estas son las versiones de cada módulo de inicio 
+
 Imagen: JeroMod-Tortillery X4 BETA-01
 Firmware base: Tortillery v1.0.5
 Sistema: JeroMod SYS v0.0.23
