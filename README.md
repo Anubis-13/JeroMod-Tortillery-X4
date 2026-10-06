@@ -1,102 +1,192 @@
-- pieza desechable que debe utilizarse;
-- altura o momento aproximado del corte;
-- posición segura del operador;
-- comportamiento esperado al encender;
-- movimientos que deben observarse;
-- condición de parada inmediata;
-- datos y vídeo necesarios.
-
-Una prueba PLR correcta debe comprobar tanto la oferta de recuperación como los movimientos físicos y la continuación real de la impresión.
-
-## 15. Restauración de fábrica
-
-Las pruebas `BT-RESET` pueden borrar configuración, redes, historial o archivos. Solo deben realizarse en una campaña expresamente preparada.
-
-Antes de comenzar debe estar indicado:
-
-- qué opciones seleccionar;
-- qué información se espera que se borre;
-- qué información se espera conservar;
-- cómo recuperar la impresora;
-- qué imagen o copia de seguridad está disponible.
-
-No realices una restauración para intentar solucionar por tu cuenta una incidencia.
-
-## 16. Reglas específicas para X4 Plus
-
-La X4 Plus comparte interfaz y software principal con la X4 Pro, pero utiliza un perfil físico diferente.
-
-Por ello:
-
-- identifica siempre el modelo como `X4 Plus`;
-- no extrapoles un resultado Pro a Plus;
-- no pruebes el perfil Plus sobre una Pro;
-- detén inmediatamente la prueba si un eje se mueve en dirección incorrecta;
-- presta especial atención a límites, centros, homing, malla, tornillos, limpieza y purga;
-- no declares una función Plus validada porque la interfaz se comporte correctamente sin movimiento.
-
-La validación Plus requiere comprobar el comportamiento físico en una X4 Plus real.
-
-## 17. Qué no debe hacer un beta tester
-
-- No modificar Python, HMI, TFT, CFG ni macros.
-- No instalar archivos sueltos.
-- No usar paquetes de procedencia desconocida.
-- No cambiar versiones manualmente.
-- No intentar corregir el firmware durante una prueba.
-- No ejecutar comandos destructivos sin instrucciones.
-- No sellar ni preparar imágenes.
-- No compartir el contenido del repositorio privado.
-- No publicar enlaces de descarga fuera del grupo autorizado.
-- No compartir contraseñas, claves, tokens ni información privada.
-- No probar el perfil Plus en una X4 Pro.
-
-## 18. Flujo completo de trabajo
-
-```text
-Beta-testing detecta y documenta
-        ↓
-Diagnóstico y corrección en entorno DEV
-        ↓
-Se crea una actualización .mksp firmada
-        ↓
-Beta-testing repite las pruebas afectadas
-        ↓
-Resultados estables
-        ↓
-WORKING → publicación → sellado → RELEASE
+BT-PLR-RECOVERY-001
 ```
 
-Los beta testers participan hasta la validación posterior a la actualización. La preparación DEV, construcción de paquetes, publicación, sellado y RELEASE son responsabilidades separadas.
+Cuando informes de un problema, copia siempre el ID completo de la prueba.
 
-## 19. Resumen rápido
+## 6. Estados permitidos
 
-Antes de probar:
+Selecciona solamente uno:
 
-- confirma modelo y versión;
-- lee toda la prueba;
-- prepara una zona segura;
-- no improvises pasos.
+| Estado | Cuándo utilizarlo |
+|---|---|
+| `OK` | La prueba se completó exactamente como estaba descrita |
+| `FALLO` | El resultado fue distinto del esperado |
+| `NO PROBADO` | La prueba todavía no se ha realizado |
+| `NO APLICA` | La prueba no corresponde a ese modelo o configuración |
+| `BLOQUEADO POR SEGURIDAD` | Continuar podría causar daño o riesgo |
+| `PENDIENTE DE ACTUALIZACIÓN` | Existe una corrección prevista, pero todavía no está instalada |
+| `CORREGIDO, PENDIENTE DE REPETIR` | La corrección está instalada, pero falta repetir la prueba |
+| `VALIDADO DESPUÉS DE ACTUALIZAR` | La prueba se repitió correctamente tras una actualización |
 
-Si funciona:
+No marques una prueba como `OK` si solo funcionó parcialmente o si fue necesario usar una solución alternativa. En ese caso, registra `FALLO` y explica lo ocurrido.
 
-- registra `OK`;
-- añade la evidencia solicitada.
+## 7. Cómo realizar una prueba
 
-Si falla:
+Cada prueba indicará:
 
-- detén la prueba si existe riesgo;
-- registra `FALLO` o `BLOQUEADO POR SEGURIDAD`;
-- crea una incidencia independiente;
-- describe acciones y resultados, no causas técnicas.
+- ID estable;
+- modelo permitido;
+- nivel de riesgo;
+- condiciones previas;
+- pantalla inicial;
+- acción exacta;
+- resultado esperado;
+- evidencias necesarias;
+- condición de parada;
+- pruebas relacionadas.
 
-Si aparece una actualización:
+Procedimiento general:
 
-- comprueba que sea compatible con tu modelo y versión;
-- instala únicamente el paquete autorizado;
-- repite las pruebas indicadas;
-- no marques la incidencia como resuelta hasta completar la repetición.
+1. Confirma que el modelo y las versiones son los solicitados.
+2. Lee las condiciones previas y el riesgo.
+3. Sitúa la impresora en la pantalla inicial indicada.
+4. Sigue únicamente los pasos publicados.
+5. No pruebes botones o combinaciones adicionales por iniciativa propia.
+6. Observa la pantalla y el comportamiento físico.
+7. Registra el resultado.
+8. Si hay un fallo, crea una incidencia separada.
 
----
+## 8. Cómo informar de una incidencia
 
-**Este programa de beta-testing no autoriza la distribución pública de JeroMod, sus imágenes, actualizaciones ni documentación privada.**
+Reglas principales:
+
+- Una incidencia por problema.
+- No agrupes fallos diferentes en el mismo informe.
+- Usa el título visible de la pantalla.
+- Indica siempre desde qué pantalla llegaste.
+- Indica exactamente qué botón pulsaste.
+- Escribe los pasos en el orden real.
+- Diferencia el resultado esperado del resultado observado.
+- Indica si sucede siempre o solo algunas veces.
+- No repitas una acción peligrosa para conseguir un vídeo.
+
+Formato del título:
+
+```text
+[ID DE PRUEBA] [MODELO] Resumen breve
+```
+
+Ejemplo:
+
+```text
+[BT-PAGE-PREMOVE-001] [X4 PRO] Home Y mueve el eje equivocado
+```
+
+La incidencia recibirá después un identificador como:
+
+```text
+BUG-2026-10-06-001
+```
+
+### Información solicitada
+
+- ID de prueba.
+- Fecha y hora.
+- Modelo.
+- Tamaño de eMMC.
+- Elección de expansión.
+- Idioma.
+- Versión de imagen.
+- Versión SYS.
+- Versión TFT.
+- Versiones de Klipper y Moonraker, si están disponibles.
+- Página inicial.
+- Página final.
+- Pasos exactos.
+- Resultado esperado.
+- Resultado real.
+- Frecuencia.
+- Gravedad.
+- Si hubo movimiento.
+- Si hubo calentamiento.
+- Si existió riesgo.
+- Foto o vídeo.
+- Logs disponibles.
+- Observaciones.
+
+## 9. Gravedad de una incidencia
+
+| Gravedad | Significado |
+|---|---|
+| Baja | Problema visual o de texto que no impide utilizar la función |
+| Media | La función falla, pero existe una alternativa segura |
+| Alta | Bloquea una función importante, una calibración o una impresión |
+| Crítica | Puede provocar movimiento peligroso, calentamiento incorrecto, pérdida grave de datos o daño físico |
+
+Si dudas entre dos niveles y existe movimiento, temperatura o riesgo, selecciona el nivel más alto y detén la prueba.
+
+## 10. Fotos, vídeos y logs
+
+Una evidencia útil debe mostrar:
+
+- la pantalla completa;
+- el botón pulsado, si es posible;
+- el movimiento relevante de la impresora;
+- el mensaje visible;
+- el momento en que aparece el problema.
+
+Antes de adjuntar archivos, revisa que no contengan:
+
+- contraseñas Wi-Fi;
+- claves SSH;
+- tokens o credenciales;
+- direcciones o datos personales;
+- nombres privados de redes;
+- información que no esté relacionada con la prueba.
+
+No publiques archivos completos de configuración salvo que un responsable los solicite mediante un procedimiento autorizado.
+
+## 11. Actualizaciones beta
+
+Las actualizaciones se entregarán mediante una publicación autorizada identificada como:
+
+```text
+UPD-BETA-NN
+```
+
+Cada actualización debe indicar:
+
+- versión de origen requerida;
+- versión de destino;
+- modelos compatibles;
+- componentes incluidos;
+- incidencias corregidas;
+- pruebas que deben repetirse;
+- hash SHA-256;
+- instrucciones visibles;
+- condiciones de recuperación o rollback.
+
+### Reglas obligatorias
+
+- Instala únicamente paquetes beta publicados en este repositorio privado.
+- No instales archivos sueltos enviados por mensajes.
+- No ejecutes scripts recibidos mediante USB.
+- No renombres ni modifiques el paquete.
+- No combines archivos de actualizaciones diferentes.
+- No instales una actualización destinada a otro modelo.
+- No retires la alimentación durante la actualización salvo que la prueba lo ordene expresamente.
+
+Una actualización no convierte automáticamente una incidencia en resuelta. La prueba original debe repetirse.
+
+Trazabilidad esperada:
+
+```text
+BT-FLOW-WIFI-002
+→ BUG-2026-10-06-001
+→ UPD-BETA-02
+→ RETEST-UPD-BETA-02
+→ VALIDADO DESPUÉS DE ACTUALIZAR
+```
+
+## 12. Pruebas posteriores a una actualización
+
+Después de instalar una actualización se comprobará, como mínimo:
+
+1. Que la instalación informa de éxito.
+2. Que la impresora reinicia correctamente.
+3. Que la versión visible es la esperada.
+4. Que la prueba que fallaba ahora funciona.
+5. Que las páginas y funciones relacionadas no han sufrido regresiones.
+6. Que no aparecen nuevos errores de movimiento, temperatura, red o almacenamiento.
+
+El resultado debe conservar la relación entre la prueba, la incidencia, la actualización y la repetición.
