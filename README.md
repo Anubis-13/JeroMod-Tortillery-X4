@@ -1,7 +1,7 @@
 
 # 👋 Bienvenido a la beta de JeroMod-Tortillery X4
 
-¡Gracias por ayudarnos!
+¡Gracias por la ayuda!
 
 Esta beta está pensada para personas que usan su impresora normalmente. **No necesitas saber programación, Linux, Klipper ni electrónica.**
 
