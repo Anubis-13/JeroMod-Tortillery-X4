@@ -54,133 +54,57 @@ Modelos incluidos:
 
 > ⚠️ El perfil X4 Plus solo debe probarse en una X4 Plus real. No lo instaléis ni lo seleccionéis en una X4 Pro.
 
-## 🔄 Actualizaciones de la beta
+## Actualizaciones de la beta
 
-El sistema de actualización mediante USB será una de las primeras funciones que probaremos, ya que se utilizará para recibir las correcciones durante toda la campaña.
+El sistema de actualización mediante USB será una de las primeras funciones que utilizaremos, porque servirá para recibir las correcciones durante toda la campaña.
 
-Cada actualización tendrá un identificador, por ejemplo:
+Cada actualización aparecerá identificada con un nombre como:
 
 ```text
 UPD-BETA-02
 ```
 
-La publicación de cada actualización indicará:
+Cada actualización deberá probarla **todo el grupo**, aunque esté destinada únicamente a la X4 Pro o a la X4 Plus. Esto permitirá comprobar tanto la instalación correcta como la protección entre modelos.
 
-- los modelos compatibles;
-- la versión necesaria antes de instalarla;
-- qué problema corrige;
-- cómo preparar el USB;
-- qué debe aparecer en pantalla;
-- qué pruebas hay que repetir después.
+- En el modelo compatible, la actualización deberá instalarse y finalizar correctamente.
+- En el modelo no compatible, el sistema deberá reconocer que el paquete pertenece a otro modelo y bloquear la instalación sin modificar nada.
 
-Las primeras comprobaciones incluirán:
-
-1. Detectar una actualización autorizada desde la pantalla principal.
-2. Revisar la información mostrada antes de instalar.
-3. Probar la opción **Cancelar** sin modificar el sistema.
-4. Instalar una actualización beta autorizada.
-5. Comprobar el reinicio posterior.
-6. Confirmar que la impresora vuelve a funcionar normalmente.
-7. Revisar la versión mostrada en **Información**.
-8. Repetir las pruebas relacionadas con la corrección.
-
-> 🚫 No instaléis archivos sueltos, scripts, paquetes enviados por otras personas ni actualizaciones destinadas a otro modelo. No renombréis ni modifiquéis el paquete.
+Cada tester comunicará qué modelo ha utilizado y el resultado mostrado por la pantalla.
 
 Si la pantalla indica que un archivo no es válido, pertenece a otro modelo o no puede instalarse, cancelad el proceso y comunicadlo.
 
+> 🚫 Utilizad únicamente el paquete autorizado para esa prueba. No lo renombréis, no lo modifiquéis y no añadáis otros archivos o scripts al USB.
+
+Después de actualizar no será necesario repetir toda la campaña. Se indicarán las pruebas afectadas y las comprobaciones de regresión necesarias.
+
 Las pruebas de recuperación, rollback o interrupción deliberada de una actualización se prepararán aparte. **No deben realizarse por iniciativa propia.**
 
-## 🗂️ Cómo se organizarán las pruebas
+## Cómo trabajaremos
 
-No probaremos todo a la vez. El trabajo se dividirá por páginas y por flujos para localizar mejor cualquier fallo.
-
-### Páginas directas
-
-Son comprobaciones rápidas de una pantalla concreta. Se entra en la página, se prueban sus botones y se confirma que responde como fue diseñada.
-
-
-- abrir **Información** y revisar las versiones;
-- entrar en **Movimiento** y comprobar sus controles;
-- abrir **Temperatura** y revisar los valores mostrados;
-- cambiar de idioma y comprobar los textos visibles.
-
-Estas pruebas utilizarán identificadores como:
-
-```text
-BT-PAGE-001
-```
-
-### Flujos rápidos
-
-Son funciones que recorren uno o varios pasos, pero pueden comprobarse en poco tiempo.
-
-Un ejemplo es **Premove**: ejecutar los homings indicados y comprobar que cada eje se mueve en la dirección correcta, llega a su posición y termina sin golpes ni errores.
-
-Estas pruebas utilizarán identificadores como:
-
-```text
-BT-FLOW-001
-```
-
-### Flujos largos
-
-Son procesos con muchas pantallas, estados o variantes. Se dividirán en varias pruebas pequeñas para que resulte más fácil realizarlas y localizar los fallos.
-
-El ejemplo principal es **PrintPause**, que puede incluir:
-
-1. iniciar un G-code desde la pantalla;
-2. iniciar un G-code desde Mainsail;
-3. llegar al estado de impresión;
-4. pausar desde la pantalla;
-5. comprobar posición, temperatura y mensajes;
-6. reanudar la impresión;
-7. repetir desde Mainsail;
-8. comprobar cancelación, cambio de filamento y otras variantes.
-
-PrintPause será uno de los últimos procesos de la campaña o se publicará dividido en bloques independientes.
-
-### Pruebas especiales
-
-Algunas funciones tendrán su propia categoría:
-
-```text
-BT-SAFE-xxx   Seguridad, temperatura o movimiento
-BT-PLR-xxx    Recuperación tras un corte eléctrico
-BT-UPD-xxx    Instalación o recuperación de actualizaciones
-BT-RESET-xxx  Restauración de fábrica
-```
-
-No es necesario memorizar estos códigos. Cada prueba llegará con su identificador ya asignado.
-
-## 📝 Cómo realizar una prueba
+Las pruebas se publicarán poco a poco. Algunas serán rápidas, como comprobar un botón, hacer Home o mover un eje. Otras se dividirán en varias partes, como imprimir, pausar, cambiar filamento o recuperar una impresión.
 
 Cada prueba indicará:
 
-- el modelo compatible;
+- qué modelo puede realizarla;
 - desde qué pantalla hay que empezar;
-- qué botón hay que pulsar;
-- los pasos exactos;
+- qué pasos hay que seguir;
 - qué debería ocurrir;
-- si implica movimiento o calentamiento;
-- cuándo hay que detenerse;
-- qué resultado se debe comunicar.
+- si implica movimiento, calentamiento o algún riesgo;
+- qué información necesito recibir al terminar.
 
-Seguid solamente los pasos indicados. Si una instrucción no está clara, preguntad antes de continuar.
+Cuando recibáis una prueba, seguid solamente los pasos indicados. Si alguna instrucción no está clara, preguntad antes de continuar.
 
-Al describir lo ocurrido, utilizad el **título visible en la pantalla**. Indicad siempre desde qué pantalla llegasteis y qué botón pulsasteis.
+## Cómo informar del resultado
 
-## ✅ Cómo informar del resultado
-
-Si todo funciona, será suficiente con responder:
+Si todo funciona, bastará con responder:
 
 ```text
-ID de prueba: BT-PAGE-001
-Resultado: OK
+OK
 Modelo: X4 Pro o X4 Plus
 Observaciones: opcional
 ```
 
-Estados que utilizaremos:
+Los estados que utilizaremos son:
 
 - **OK:** funcionó como se esperaba.
 - **FALLO:** ocurrió algo diferente.
@@ -191,23 +115,17 @@ Estados que utilizaremos:
 - **CORREGIDO, PENDIENTE DE REPETIR:** la corrección está instalada, pero falta comprobarla.
 - **VALIDADO DESPUÉS DE ACTUALIZAR:** la prueba se repitió correctamente.
 
-## 🐞 Si encontráis un problema
+## Si encontráis un problema
 
-Cada problema debe comunicarse por separado. No intentéis interpretar el código ni averiguar la causa técnica: necesito saber **qué hicisteis y qué ocurrió**.
+Cada problema debe comunicarse por separado. No es necesario intentar averiguar la causa técnica; necesito saber qué hicisteis y qué ocurrió.
 
-Podéis utilizar esta plantilla:
+Indicad:
 
 ```text
-ID de prueba:
-Fecha y hora:
-Modelo: X4 Pro / X4 Plus
-Tamaño de eMMC:
-Expansión seleccionada:
-Idioma:
-Página desde la que empezasteis:
-Página en la que terminó:
+Prueba que estabais realizando:
+Modelo de impresora:
+Pantalla desde la que empezasteis:
 Botón que pulsasteis:
-Pasos realizados:
 Resultado esperado:
 Resultado real:
 ¿Ocurre siempre o solo algunas veces?:
@@ -215,50 +133,18 @@ Resultado real:
 ¿Hubo calentamiento?: Sí / No
 ¿Existió algún riesgo?: Sí / No
 Foto o vídeo, si está disponible:
-Observaciones:
 ```
 
 Ejemplo:
 
 ```text
-ID de prueba: BT-FLOW-003
-Página inicial: Movimiento
-Botón: Home Y
+Estaba en la pantalla Movimiento.
+Pulsé Home Y.
 Esperaba que se moviese el eje Y, pero se movió el eje X.
 Apagué la impresora y no repetí la prueba por seguridad.
-Resultado: BLOQUEADO POR SEGURIDAD
-```
-La coordinación de la beta añadirá después el identificador de incidencia, las versiones completas y los logs disponibles. Una incidencia corresponderá siempre a un único problema.
-
-## 🔗 Seguimiento de una corrección
-
-Cuando un fallo reciba una actualización, se conservará toda la relación:
-
-```text
-Prueba → Incidencia → Actualización → Repetición
 ```
 
-Ejemplo:
-
-```text
-BT-FLOW-WIFI-002
-→ BUG-2026-10-06-001
-→ UPD-BETA-02
-→ RETEST-UPD-BETA-02
-→ OK
-```
-
-La lista de repetición incluirá:
-
-- la prueba que fallaba;
-- la comprobación de instalación;
-- el reinicio posterior;
-- las páginas o flujos relacionados;
-- el resultado después de actualizar.
-
-No será necesario repetir toda la campaña después de cada actualización. Se indicarán únicamente las pruebas afectadas y las comprobaciones relacionadas.
-
-## ⚠️ Seguridad
+## Seguridad
 
 Durante cualquier prueba con movimiento o calentamiento, permaneced junto a la impresora y mantened despejada la zona de trabajo.
 
@@ -272,11 +158,9 @@ Detened la prueba si observáis:
 - humo, olor a quemado o cableado caliente;
 - cualquier comportamiento que pueda dañar la impresora o resultar peligroso.
 
-> 🛑 No repitáis una situación peligrosa para conseguir una foto o un vídeo. Indicad **BLOQUEADO POR SEGURIDAD** y explicad brevemente lo ocurrido.
+No repitáis una situación peligrosa para conseguir una foto o un vídeo. Si es necesario detener la prueba, indicad `BLOQUEADO POR SEGURIDAD` y explicad brevemente lo ocurrido.
 
-No cortéis la alimentación, forcéis una recuperación ni iniciéis una restauración de fábrica salvo que la prueba lo indique expresamente.
-
-## 📷 Fotos, vídeos e información privada
+## Fotos, vídeos e información privada
 
 Las fotos y vídeos solo serán necesarios cuando ayuden a entender el problema. Antes de publicarlos, comprobad que no muestren:
 
@@ -284,39 +168,32 @@ Las fotos y vídeos solo serán necesarios cuando ayuden a entender el problema.
 - claves SSH;
 - tokens o códigos privados;
 - direcciones o datos personales;
-- información que no esté relacionada con la prueba.
+- otra información que no esté relacionada con la prueba.
 
-No compartáis fuera del grupo las imágenes, actualizaciones, enlaces ni documentos de esta beta.
+No compartáis fuera del grupo las imágenes, actualizaciones, enlaces o documentos de esta beta.
 
-## 📌 Reglas generales
+## Pruebas especiales
 
-- Realizad únicamente las pruebas asignadas.
-- Describid lo que hicisteis y lo que ocurrió.
-- Utilizad los nombres visibles en la pantalla.
-- Comunicad cada problema por separado.
+Las siguientes pruebas se dejarán para campañas específicas:
+
+- impresión completa y todas sus variantes;
+- pausa, reanudación y cambio de filamento;
+- recuperación tras un corte eléctrico;
+- recuperación o rollback forzado de una actualización;
+- restauración de fábrica;
+- validación física completa de la X4 Plus.
+
+No realicéis estas pruebas por iniciativa propia. Se proporcionarán instrucciones concretas cuando llegue el momento.
+
+## Reglas generales
+
+- Seguid únicamente los pasos de la prueba asignada.
 - Preguntad si alguna instrucción no está clara.
 - No modifiquéis archivos internos de la impresora.
 - No instaléis archivos sueltos ni paquetes no autorizados.
 - No probéis el perfil Plus en una X4 Pro.
-- No repitáis movimientos o calentamientos peligrosos.
+- No cortéis la alimentación sin una prueba preparada.
+- No utilicéis una restauración de fábrica para intentar resolver una incidencia.
 - No compartáis el material de la beta fuera del grupo.
 
-## 🤝 Objetivo
-
-El proceso será sencillo:
-
-```text
-Beta-testing detecta y documenta
-        ↓
-Diagnóstico y corrección en desarrollo
-        ↓
-Se publica una actualización USB autorizada
-        ↓
-Beta-testing repite las pruebas afectadas
-        ↓
-Resultados estables
-        ↓
-Publicación de la versión final
-```
-
-El objetivo es comprobar **JeroMod-Tortillery X4** de forma ordenada, segura y fácil de seguir. Gracias por dedicar vuestro tiempo y vuestra impresora a estas pruebas.
+El objetivo es comprobar el funcionamiento de JeroMod-Tortillery X4 de forma ordenada y segura. Gracias por dedicar vuestro tiempo y vuestra impresora a estas pruebas.
