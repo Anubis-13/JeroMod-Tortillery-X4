@@ -104,9 +104,12 @@ Las pruebas de flujo utilizarán identificadores como:
 BT-FLOW-001
 ```
 
-Una prueba rápida puede ser **Premove**: realizar todos los homings indicados y comprobar que cada eje se mueve en la dirección correcta, llega a su posición y termina sin golpes ni errores.
+Una prueba rápida puede ser **Páginas de Herrmientas**: 
+**En la pestaña movimiento**: realizar todos los homings indicados y comprobar que cada eje se mueve en la dirección correcta, llega a su posición y termina sin golpes ni errores.
+**En la pestaña temperaturas**: enviar los perfiles de temperatura, parar. Poner temperaturas manual y ver límites.
+**En la pestaña extruir**: realizar extrusiones y retracciones controlar temperaturas y errores.
 
-Un proceso largo puede ser **PrintPause**. En él intervienen el inicio de una impresión desde la pantalla o desde Mainsail, la llegada al estado de impresión, la pausa, el comportamiento durante la pausa, la reanudación y otras variantes. Por su tamaño, este flujo se dejará para el final o se dividirá en varias fichas independientes.
+Un proceso largo puede ser **Imprimir**. En él intervienen el inicio de una impresión desde la pantalla o desde Mainsail, la llegada al estado de impresión, la pausa, el comportamiento durante la pausa, la reanudación y otras variantes. Por su tamaño, este flujo se dejará para el final o se dividirá en varias fichas independientes. Aunque este puede ser una des las últimas pruebas por todo lo que conlleva. Ya que algún error puede venir de otra página con la que comparta programación.
 
 También existirán identificadores específicos para pruebas especiales:
 
