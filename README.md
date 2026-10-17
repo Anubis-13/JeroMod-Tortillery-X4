@@ -144,7 +144,9 @@ Actualizar y repetir lo necesario
         ↓
 Cerrar el bloque y pasar al siguiente
         ↓
-Imagen candidata para publicación
+Cerrar todos los bloques
+        ↓
+Imagen candidata de lanzamiento público
 ```
 
 El objetivo es comprobar **JeroMod-Tortillery X4** de forma ordenada, segura y fácil de seguir. Gracias por dedicar vuestro tiempo y vuestra impresora a estas pruebas.
