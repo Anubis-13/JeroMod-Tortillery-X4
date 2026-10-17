@@ -93,7 +93,7 @@ Cada guía indicará:
 
 Seguid el orden indicado y preguntad si algún paso no está claro. Si todo funciona, cerraremos el bloque. Si aparece un fallo, se corregirá, recibiréis una actualización y repetiremos solamente las partes afectadas.
 
-Podéis utilizar y explorar la impresora con normalidad. Si encontráis algo fuera del bloque actual, anotad qué hicisteis y qué ocurrió; lo revisaremos cuando lleguemos a esa función. Las propuestas para cambiar el diseño o añadir funciones se estudiarán cuando la base actual esté terminada y estable, es decir cuando ya sea una versión pública. Aunque realmente solo me interesa añadir canBus de Makerbase o Bigtreetech y quizás algo para colores(Esto último lo mismo ya tengo otra impresora o ya se acabó las ganas de seguir con el proyecto). Por eso me interesa cerrar lo que hay y no salir de lo que hay. Dejar un sitema con más posibilidades que el oficial, pero cerrarlo siendo estable.
+Podéis utilizar y explorar la impresora con normalidad. Si encontráis algo fuera del bloque actual, anotad qué hicisteis y qué ocurrió; lo revisaremos cuando lleguemos a esa función. Las propuestas para cambiar el diseño o añadir funciones se estudiarán cuando la base actual esté terminada y estable, es decir cuando ya sea una versión pública. Aunque realmente solo me interesa añadir canBus de Makerbase o Bigtreetech y quizás algo para colores(Esto último lo mismo ya tengo otra impresora o ya se acabó las ganas de seguir con el proyecto). Por eso me interesa cerrar lo que hay y no salir de ahí. Dejar un sitema con más posibilidades que el oficial, pero cerrarlo siendo estable.
 
 ## ✅ Cómo informar del resultado
 
