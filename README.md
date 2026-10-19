@@ -44,15 +44,15 @@ La imagen se distribuirá mediante un enlace externo porque ocupa más de 7 GB y
 **Enlace de descarga:**
 
 ```text
-PENDIENTE DE AÑADIR
+[Descarga "Imagen Beta"](https://drive.google.com/file/d/1acVj2qs3dZN3fFy-GJ40GVE3lyYIc95-/view?usp=drive_link)
 ```
 
 Datos del archivo publicado:
 
 ```text
 Nombre: JeroMod_Tortillery_X4_Beta_001_FB1.0.5_LCD0.0.23_TFT0.164_8GB.img
-Tamaño: 7.818.182.656 bytes
-Tamaño aproximado: 7,281 GiB
+Tamaño total en disco: 7.818.182.656 bytes
+Tamaño equivalente: 7,28 GiB
 SHA-256: BB2461F967E7597D967AF47A7C05E349E31DE65DCB70F21944C996A7404617BF
 ```
 
