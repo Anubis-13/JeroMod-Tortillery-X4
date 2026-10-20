@@ -43,7 +43,7 @@ La imagen se distribuirá mediante un enlace externo porque ocupa más de 7 GB y
 
 **Enlace de descarga:**
 
-[Descarga "Imagen Beta"](https://drive.usercontent.google.com/download?id=1acVj2qs3dZN3fFy-GJ40GVE3lyYIc95-&export=download)
+[Descarga "Imagen Beta"](https://drive.google.com/uc?export=download&id=1acVj2qs3dZN3fFy-GJ40GVE3lyYIc95-)
 
 Datos del archivo publicado:
 
