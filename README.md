@@ -1,6 +1,6 @@
 # 🧪 Beta pública de JeroMod-Tortillery X4
 
-**JeroMod-Tortillery X4** es una modificación comunitaria para las impresoras **Artillery X4 Pro** y **Artillery X4 Plus**. Esta versión es una beta pública: puede contener errores y debe utilizarse con precaución.
+**JeroMod-Tortillery X4** es una modificación para las impresoras **Artillery X4 Pro** y **Artillery X4 Plus**. Esta versión es una beta pública: puede contener errores y debe utilizarse con precaución.
 
 Este repositorio contiene únicamente la documentación, las guías de uso y el registro de incidencias. La imagen, las actualizaciones y el código interno no se alojan aquí.
 
