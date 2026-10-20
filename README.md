@@ -39,11 +39,11 @@ No se utilizarán Issues para confirmar que algo funciona, pedir nuevas funcione
 
 ## 📥 Descarga de la imagen
 
-La imagen se distribuirá mediante un enlace externo porque ocupa más de 7 GB y no se alojará directamente en GitHub.
+La imagen se distribuirá mediante un enlace externo porque ocupa más de lo permitido en GitHub y no se alojará directamente en GitHub.
 
 **Enlace de descarga:**
 
-[Descarga "Imagen Beta"]([https://drive.google.com/uc?export=download&id=1acVj2qs3dZN3fFy-GJ40GVE3lyYIc95-](https://drive.google.com/file/d/1acVj2qs3dZN3fFy-GJ40GVE3lyYIc95-/view?usp=sharing))
+[Descarga "Imagen Beta"]([https://drive.google.com/uc?export=download&id=1acVj2qs3dZN3fFy-GJ40GVE3lyYIc95-](https://drive.google.com/file/d/1acVj2qs3dZN3fFy-GJ40GVE3lyYIc95-/view?usp=sharing)
 
 Datos del archivo publicado:
 
