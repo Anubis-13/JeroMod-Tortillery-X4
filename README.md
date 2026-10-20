@@ -116,10 +116,10 @@ La imagen se distribuirá mediante un enlace externo porque supera el tamaño m�
 Datos del archivo publicado:
 
 ```text
-Nombre: JeroMod_Tortillery_X4_Beta_001_FB1.0.5_LCD0.0.23_TFT0.164_8GB.img
-Tamaño: 7.818.182.656 bytes
-Tamaño aproximado: 7,281 GiB
-SHA-256: BB2461F967E7597D967AF47A7C05E349E31DE65DCB70F21944C996A7404617BF
+Nombre: JeroMod_Tortillery_X4_Beta_001_FB1.0.5_LCD0.0.23_TFT0.165_8GB.img
+Tamaño total en disco: 7.818.182.656 bytes
+Tamaño equivalente: 7,28 GiB
+SHA-256: 586EED3297EBDC4522E80F3D8E908681B2758531C6C7D0799B92A3EA61BE26FD
 ```
 
 > 🔒 Antes de grabar la imagen, comprobad que el nombre, el tamaño y el SHA-256 coinciden exactamente con los publicados.
