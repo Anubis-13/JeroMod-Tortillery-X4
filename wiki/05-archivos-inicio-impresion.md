@@ -63,7 +63,7 @@ Esperad mientras se procesa la parada y no pulséis repetidamente. Las variantes
 ## Informar de un fallo de B05
 
 ```text
-[B05][X4 PRO] Reimprimir inicia un archivo diferente
+[FALLO] Reimprimir inicia un archivo diferente
 ```
 
 Indicad si el archivo estaba en USB, almacenamiento interno o Mainsail; nombre visible; pantalla inicial; acción realizada; estado mostrado y si el trabajo llegó a calentar o moverse.

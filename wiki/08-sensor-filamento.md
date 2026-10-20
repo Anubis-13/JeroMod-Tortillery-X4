@@ -45,7 +45,7 @@ Mainsail debe mostrar el trabajo pausado durante el aviso y volver a `printing` 
 ## Informar de un fallo de B08
 
 ```text
-[B08][X4 PRO] Continuar reanuda aunque el sensor sigue sin filamento
+[FALLO] Continuar reanuda aunque el sensor sigue sin filamento
 ```
 
 Indicad si el sensor estaba activado, estado físico del filamento, texto de la pantalla, opción elegida y estado observado en Mainsail.

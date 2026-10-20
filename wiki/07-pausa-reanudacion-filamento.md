@@ -42,7 +42,7 @@ Al finalizar, el sistema ejecuta la secuencia de cierre del cambio, vuelve a la 
 ## Informar de un fallo de B07
 
 ```text
-[B07][X4 PRO] Reanudar deja la pantalla en Impresión pausada
+[FALLO] Reanudar deja la pantalla en Impresión pausada
 ```
 
 Indicad dónde se solicitó la pausa, estado mostrado en Mainsail, pantalla alcanzada, acción de filamento realizada y si el cabezal llegó a regresar a la pieza.

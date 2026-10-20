@@ -85,7 +85,7 @@ También muestra las versiones de firmware base, SysLCD, TFT, Klipper, Moonraker
 ## Informar de un fallo de B02
 
 ```text
-[B02][X4 PRO] Una red guardada no muestra el aspa blanca
+[FALLO] Una red guardada no muestra el aspa blanca
 ```
 
 Indicad el apartado, el nombre visible de la opción, el estado anterior y posterior y si el mismo cambio se refleja en Mainsail o en la pantalla principal.

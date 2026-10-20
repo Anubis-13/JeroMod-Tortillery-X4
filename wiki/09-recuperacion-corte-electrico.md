@@ -36,7 +36,7 @@ El sistema restaura el archivo y el estado disponible desde el último punto gua
 ## Informar de un fallo de B09
 
 ```text
-[B09][X4 PLUS] Cancelar no elimina la recuperación guardada
+[FALLO] Cancelar no elimina la recuperación guardada
 ```
 
 Indicad si PLR estaba activo, origen del archivo, fase aproximada de la impresión, pantalla del siguiente arranque, opción elegida y última fase mostrada.

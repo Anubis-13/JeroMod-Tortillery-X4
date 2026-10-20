@@ -59,7 +59,7 @@ No cambiéis temporalmente el modelo para intentar instalar otro paquete.
 ## Informar de un fallo de B10
 
 ```text
-[B10][X4 PRO] La actualización queda detenida en Reiniciando
+[FALLO] La actualización queda detenida en Reiniciando
 ```
 
 Indicad nombre y SHA-256 del paquete, modelo, versiones anteriores, mensaje inicial, última fase alcanzada, si hubo reinicio y versiones mostradas después. No adjuntéis paquetes no autorizados al Issue.

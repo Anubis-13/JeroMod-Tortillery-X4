@@ -42,7 +42,7 @@ No cortéis la alimentación ni toquéis la pantalla durante el proceso.
 ## Informar de un fallo de B11
 
 ```text
-[B11][X4 PRO] Cancelar borra las redes WiFi guardadas
+[FALLO] Cancelar borra las redes WiFi guardadas
 ```
 
 Indicad las casillas seleccionadas, opción pulsada, última pantalla, datos que se conservaron o borraron y si el reinicio terminó correctamente.

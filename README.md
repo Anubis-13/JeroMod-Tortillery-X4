@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/33707189/README.md)
 # 🧪 Beta pública de JeroMod-Tortillery X4
 
 **JeroMod-Tortillery X4** es un proyecto independiente creado y desarrollado
@@ -49,23 +48,39 @@ lo compartiré por separado.
 
 La documentación, las consultas y la gestión de incidencias se realizarán **únicamente en español**. Podéis utilizar un traductor, pero el contenido publicado en GitHub deberá estar en español.
 
-## 🐞 Antes de abrir una incidencia
+## 🐞 Cómo informar de un problema
 
-Solo se revisarán incidencias enviadas mediante el formulario oficial y con el título obligatorio:
+Los problemas se gestionarán únicamente mediante la sección **Issues** de este
+repositorio y solo se atenderán en español. Al crear una incidencia, GitHub
+mostrará dos formularios:
+
+- **Informar de un fallo:** para problemas de la impresora, la pantalla,
+  Mainsail, la instalación o las actualizaciones.
+- **Corregir o mejorar la wiki:** para información incorrecta, enlaces rotos o
+  explicaciones poco claras.
+
+Solo se revisarán los fallos enviados mediante el formulario correspondiente y
+con un título breve y descriptivo:
 
 ```text
-[BLOQUE][MODELO] Descripción breve del problema
+[FALLO] Descripción breve del problema
 ```
 
 Ejemplos correctos:
 
 ```text
-[B03][X4 PRO] Home Y mueve el eje en dirección incorrecta
-[B05][X4 PLUS] Pre-Impresión no muestra la miniatura
-[B10][X4 PRO] La actualización válida no aparece en pantalla
+[FALLO] Home Y mueve el eje en dirección incorrecta
+[FALLO] Pre-Impresión no muestra la miniatura
+[FALLO] La actualización válida no aparece en pantalla
 ```
 
-Los Issues incompletos, duplicados, escritos en otro idioma, con un título genérico o que mezclen varios problemas se cerrarán sin diagnóstico. Deberán enviarse de nuevo siguiendo el formulario.
+El formulario obliga a seleccionar el modelo y el apartado afectado: Ajustes,
+WiFi, Herramientas, Impresión, Pausa, Actualizaciones u otra sección. No añadáis
+esa clasificación manualmente al título.
+
+Los Issues incompletos, duplicados, escritos en otro idioma, con títulos como
+«No funciona» o que mezclen varios problemas se cerrarán sin diagnóstico.
+Deberán enviarse de nuevo siguiendo el formulario.
 
 Antes de informar:
 
@@ -74,7 +89,13 @@ Antes de informar:
 3. Si existe, añadid allí vuestro modelo, versiones y resultado.
 4. Si no existe, abrid **un Issue por cada problema**.
 
-No se utilizarán Issues para confirmar que algo funciona, pedir nuevas funciones o solicitar modificaciones personales. Durante la beta se priorizarán los fallos reproducibles del sistema actual.
+No se utilizarán Issues para confirmar que algo funciona, pedir nuevas
+funciones o solicitar modificaciones personales. Durante la beta se
+priorizarán los fallos reproducibles del sistema actual.
+
+> 🔐 No publiquéis contraseñas WiFi, claves SSH, tokens, direcciones ni otros
+> datos privados. Revisad también las fotografías, vídeos y logs antes de
+> adjuntarlos.
 
 ## 📥 Descarga de la imagen
 
@@ -133,8 +154,9 @@ La [wiki](wiki/README.md) explica el sistema por bloques:
 Las páginas no son exámenes ni listas de pruebas. Explican cómo funciona cada apartado, qué precauciones requiere y qué información debe incluirse si aparece un fallo.
 
 Si encontráis un error, un enlace roto, información incompleta o una explicación
-que no se entienda bien, podéis comunicarlo para mejorar la wiki. Indicad la
-página y el apartado concreto, explicando qué información debería revisarse.
+que no se entienda bien, utilizad el formulario **Corregir o mejorar la wiki**.
+Indicad la página y el apartado concreto, explicando qué información debería
+revisarse. No utilicéis ese formulario para comunicar fallos de la impresora.
 
 ## 🔄 Actualizaciones USB
 
@@ -164,7 +186,8 @@ Las pruebas de recuperación, rollback o interrupción deliberada de una actuali
 ## 💬 Uso de GitHub
 
 - **Documentación (`wiki/`):** funcionamiento y procedimientos.
-- **Issues:** únicamente fallos reproducibles y separados.
+- **Issues:** fallos reproducibles y correcciones de la wiki, siempre mediante
+  el formulario correspondiente.
 - **Discussions:** anuncios y dudas generales en español.
 - **Drive externo:** imagen y actualizaciones autorizadas.
 

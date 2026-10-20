@@ -30,19 +30,27 @@ Esta wiki explica las funciones disponibles en la beta pública. No es una campa
 
 ## Cómo informar de un fallo
 
-Los Issues deben crearse mediante el formulario oficial y conservar este título:
+Los Issues deben crearse mediante el formulario oficial y utilizar un título
+breve y descriptivo:
 
 ```text
-[BLOQUE][MODELO] Descripción breve
+[FALLO] Descripción breve del problema
 ```
 
 Ejemplo:
 
 ```text
-[B04][X4 PLUS] La malla intenta medir fuera de la cama
+[FALLO] La malla intenta medir fuera de la cama
 ```
 
-Un Issue debe describir un solo problema. Indicad el nombre visible de la pantalla, el botón o icono utilizado y los pasos exactos. Si el problema también aparece en Mainsail, añadid ese dato en el mismo informe.
+El modelo y el apartado afectado se seleccionan dentro del formulario. Un Issue
+debe describir un solo problema. Indicad el nombre visible de la pantalla, el
+botón o icono utilizado y los pasos exactos. Si el problema también aparece en
+Mainsail, añadid ese dato en el mismo informe.
+
+Para información incorrecta, enlaces rotos o explicaciones poco claras,
+utilizad el formulario **Corregir o mejorar la wiki** con un título que empiece
+por `[WIKI]`.
 
 Los informes incompletos, duplicados, escritos en otro idioma o con varios problemas mezclados se cerrarán sin diagnóstico.
 

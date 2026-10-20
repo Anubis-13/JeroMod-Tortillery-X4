@@ -45,7 +45,7 @@ Durante la configuración inicial, una actualización, un guardado o un reinicio
 ## Informar de un fallo de B12
 
 ```text
-[B12][X4 PRO] FIRMWARE RESTART vuelve al mismo error de Klipper
+[FALLO] FIRMWARE RESTART vuelve al mismo error de Klipper
 ```
 
 Indicad qué acción abrió el aviso, texto completo, pantalla anterior, botón utilizado, resultado del reinicio y logs disponibles. Si el error pertenece claramente a otro bloque, utilizad el código de ese bloque.

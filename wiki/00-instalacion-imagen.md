@@ -40,7 +40,7 @@ No grabéis repetidamente sin revisar primero:
 Título:
 
 ```text
-[B00][X4 PRO] Descripción breve
+[FALLO] Descripción breve
 ```
 
 Indicad herramienta de grabación, tamaño de eMMC, verificación SHA-256, pantalla alcanzada y mensaje exacto. No publiquéis imágenes completas de discos, claves ni datos privados.

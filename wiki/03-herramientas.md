@@ -49,7 +49,7 @@ En este apartado pueden utilizarse los controles normales de movimiento y temper
 ## Informar de un fallo de B03
 
 ```text
-[B03][X4 PLUS] Home Z no regresa a Herramientas
+[FALLO] Home Z no regresa a Herramientas
 ```
 
 Indicad pantalla, eje o calentador, valor utilizado, dirección observada, posición mostrada en Mainsail y si hubo riesgo térmico o mecánico.

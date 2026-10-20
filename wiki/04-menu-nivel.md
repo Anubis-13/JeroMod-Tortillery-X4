@@ -63,7 +63,7 @@ Si no se detecta el acelerómetro, aparece **No se ha detectado acelerómetro** 
 ## Informar de un fallo de B04
 
 ```text
-[B04][X4 PRO] Guardar Z-Offset no completa el reinicio
+[FALLO] Guardar Z-Offset no completa el reinicio
 ```
 
 Indicad calibración, valores elegidos, punto o eje, último mensaje visible, estado de Mainsail y cualquier movimiento o temperatura peligrosa.

@@ -57,7 +57,7 @@ Para comparar valores, utilizad los controles normales de velocidad, flujo, vent
 ## Informar de un fallo de B06
 
 ```text
-[B06][X4 PLUS] El factor de velocidad no se actualiza en Mainsail
+[FALLO] El factor de velocidad no se actualiza en Mainsail
 ```
 
 Indicad origen del trabajo, control utilizado, valor anterior, valor solicitado, valor final en pantalla y Mainsail, y si el problema desaparece al volver a 100 %.
