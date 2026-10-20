@@ -1,6 +1,8 @@
 # 🔄 B10 — Actualizaciones USB
 
-Las correcciones se distribuyen como paquetes `.mksp` firmados. Utilizad únicamente el archivo y el enlace publicados en el repositorio oficial de la beta.
+Las correcciones se distribuyen como paquetes `.mksp` firmados mediante los
+[Releases del repositorio](https://github.com/Anubis-13/JeroMod-Tortillery-X4/releases).
+Utilizad únicamente los archivos publicados en ese canal oficial.
 
 ## Preparar el USB
 
