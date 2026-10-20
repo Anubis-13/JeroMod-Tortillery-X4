@@ -112,6 +112,8 @@ La imagen se distribuirá mediante un enlace externo porque supera el tamaño m�
 **Enlace de descarga:**
 
 [AQUÍ LA DESCARGA](https://drive.usercontent.google.com/download?id=1r7LGBq6CZ-2WhnRB_oMauw3_ysZvVpYi&export=download&authuser=7)
+
+
 Datos del archivo publicado:
 
 ```text
