@@ -8,7 +8,9 @@ precaución.
 > 🇪🇸 **La documentación, las consultas y las incidencias se gestionarán
 > únicamente en español.**
 
-Este repositorio contiene únicamente la documentación, las guías de uso y el registro de incidencias. La imagen, las actualizaciones y el código interno no se alojan aquí.
+Este repositorio contiene la documentación, las guías de uso, el registro de
+incidencias y las actualizaciones autorizadas publicadas mediante **Releases**.
+La imagen completa y el código interno no se alojan aquí.
 
 ## ⚠️ Aviso importante antes de instalar
 
@@ -51,19 +53,12 @@ La documentación, las consultas y la gestión de incidencias se realizarán **�
 ## 🐞 Cómo informar de un problema
 
 Los problemas se gestionarán únicamente mediante la sección **Issues** de este
-repositorio y solo se atenderán en español. Al crear una incidencia, GitHub
-mostrará dos formularios:
-
-- **Informar de un fallo:** para problemas de la impresora, la pantalla,
-  Mainsail, la instalación o las actualizaciones.
-- **Corregir o mejorar la wiki:** para información incorrecta, enlaces rotos o
-  explicaciones poco claras.
-
-Solo se revisarán los fallos enviados mediante el formulario correspondiente y
-con un título breve y descriptivo:
+repositorio y solo se atenderán en español. Cada Issue debe tratar un único
+problema y utilizar uno de estos títulos:
 
 ```text
 [FALLO] Descripción breve del problema
+[WIKI] Descripción breve del problema de documentación
 ```
 
 Ejemplos correctos:
@@ -72,15 +67,28 @@ Ejemplos correctos:
 [FALLO] Home Y mueve el eje en dirección incorrecta
 [FALLO] Pre-Impresión no muestra la miniatura
 [FALLO] La actualización válida no aparece en pantalla
+[WIKI] El apartado de conexión WiFi no explica cómo borrar una red
 ```
-
-El formulario obliga a seleccionar el modelo y el apartado afectado: Ajustes,
-WiFi, Herramientas, Impresión, Pausa, Actualizaciones u otra sección. No añadáis
-esa clasificación manualmente al título.
 
 Los Issues incompletos, duplicados, escritos en otro idioma, con títulos como
 «No funciona» o que mezclen varios problemas se cerrarán sin diagnóstico.
-Deberán enviarse de nuevo siguiendo el formulario.
+Deberán enviarse de nuevo con la información necesaria.
+
+En un fallo indicad, como mínimo:
+
+- modelo: X4 Pro o X4 Plus;
+- versión de la imagen, SysLCD y TFT;
+- apartado afectado: Ajustes, WiFi, Herramientas, Impresión, Actualizaciones u
+  otro;
+- si ocurrió desde la pantalla, Mainsail o ambos;
+- pantalla inicial y botón, icono u opción utilizada;
+- pasos exactos para reproducirlo;
+- resultado esperado y resultado real;
+- si hubo movimiento, calentamiento o algún riesgo;
+- fotografías, vídeos o logs cuando sean útiles.
+
+El mantenimiento del repositorio aplicará la etiqueta `fallo` a los problemas
+del sistema y `documentación` a los problemas de la wiki.
 
 Antes de informar:
 
@@ -103,7 +111,9 @@ La imagen se distribuirá mediante un enlace externo porque supera el tamaño m�
 
 **Enlace de descarga:**
 
-[Descarga "Imagen Beta"](https://drive.usercontent.google.com/download?id=1acVj2qs3dZN3fFy-GJ40GVE3lyYIc95-&export=download&authuser=7)
+```text
+PENDIENTE DE AÑADIR
+```
 
 Datos del archivo publicado:
 
@@ -152,13 +162,15 @@ La [wiki](wiki/README.md) explica el sistema por bloques:
 Las páginas no son exámenes ni listas de pruebas. Explican cómo funciona cada apartado, qué precauciones requiere y qué información debe incluirse si aparece un fallo.
 
 Si encontráis un error, un enlace roto, información incompleta o una explicación
-que no se entienda bien, utilizad el formulario **Corregir o mejorar la wiki**.
+que no se entienda bien, abrid un Issue cuyo título comience por `[WIKI]`.
 Indicad la página y el apartado concreto, explicando qué información debería
-revisarse. No utilicéis ese formulario para comunicar fallos de la impresora.
+revisarse. No mezcléis en él un fallo de la impresora.
 
 ## 🔄 Actualizaciones USB
 
-Las correcciones de la beta se distribuirán mediante paquetes autorizados con un nombre similar a:
+Las correcciones de la beta se publicarán en los
+[Releases del repositorio](https://github.com/Anubis-13/JeroMod-Tortillery-X4/releases)
+mediante paquetes autorizados con un nombre similar a:
 
 ```text
 JM-T-X4_UPDATE_vX.X.XXX.mksp
@@ -184,10 +196,11 @@ Las pruebas de recuperación, rollback o interrupción deliberada de una actuali
 ## 💬 Uso de GitHub
 
 - **Documentación (`wiki/`):** funcionamiento y procedimientos.
-- **Issues:** fallos reproducibles y correcciones de la wiki, siempre mediante
-  el formulario correspondiente.
+- **Issues:** fallos reproducibles con título `[FALLO]` y problemas de la wiki
+  con título `[WIKI]`.
 - **Discussions:** anuncios y dudas generales en español.
-- **Drive externo:** imagen y actualizaciones autorizadas.
+- **Releases:** actualizaciones USB autorizadas.
+- **Enlace externo:** descarga de la imagen completa.
 
 ## 📜 Licencia y responsabilidad
 
