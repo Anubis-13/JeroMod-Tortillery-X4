@@ -132,6 +132,10 @@ La [wiki](wiki/README.md) explica el sistema por bloques:
 
 Las páginas no son exámenes ni listas de pruebas. Explican cómo funciona cada apartado, qué precauciones requiere y qué información debe incluirse si aparece un fallo.
 
+Si encontráis un error, un enlace roto, información incompleta o una explicación
+que no se entienda bien, podéis comunicarlo para mejorar la wiki. Indicad la
+página y el apartado concreto, explicando qué información debería revisarse.
+
 ## 🔄 Actualizaciones USB
 
 Las correcciones de la beta se distribuirán mediante paquetes autorizados con un nombre similar a:
