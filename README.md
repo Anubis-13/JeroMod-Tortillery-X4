@@ -111,7 +111,7 @@ La imagen se distribuirá mediante un enlace externo porque supera el tamaño m�
 
 **Enlace de descarga:**
 
-[AQUÍ LA DESCARGA]()
+[AQUÍ LA DESCARGA]() De meomento estoy preparando para subir
 
 Datos del archivo publicado:
 
