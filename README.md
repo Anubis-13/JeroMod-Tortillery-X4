@@ -144,7 +144,7 @@ Modelos incluidos:
 
 La wiki explica el sistema por bloques:  
 
-[ WIKI ](wiki/README.md)
+[ ENTRAR EN LA WIKI ](wiki/README.md)
 
 - instalación y primer arranque;
 - ajustes, WiFi, NeoPixel y energía;
