@@ -114,7 +114,7 @@ La imagen se distribuirá mediante un enlace externo porque supera el tamaño m�
 [AQUÍ LA DESCARGA](https://drive.usercontent.google.com/download?id=1r7LGBq6CZ-2WhnRB_oMauw3_ysZvVpYi&export=download&authuser=7)
 
 
-Datos del archivo publicado:
+## 📋 Datos del archivo publicado:
 
 ```text
 Nombre: JeroMod_Tortillery_X4_Beta_001_FB1.0.5_LCD0.0.23_TFT0.165_8GB.img
