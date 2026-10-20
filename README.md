@@ -43,7 +43,7 @@ La imagen se distribuirá mediante un enlace externo porque ocupa más de lo per
 
 **Enlace de descarga:**
 
-[Descarga "Imagen Beta"]([https://drive.google.com/uc?export=download&id=1acVj2qs3dZN3fFy-GJ40GVE3lyYIc95-](https://drive.google.com/file/d/1acVj2qs3dZN3fFy-GJ40GVE3lyYIc95-/view?usp=sharing)
+[Descarga "Imagen Beta"](https://drive.usercontent.google.com/download?id=1acVj2qs3dZN3fFy-GJ40GVE3lyYIc95-&export=download&authuser=7)
 
 Datos del archivo publicado:
 
