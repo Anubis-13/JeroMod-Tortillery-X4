@@ -1,0 +1,200 @@
+name: 🐞 Informar de un fallo
+description: Comunica un único problema reproducible de JeroMod-Tortillery X4.
+title: "[FALLO] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por informar. Completa todos los campos en español y termina el título con una descripción breve, por ejemplo: `[FALLO] Pre-Impresión no muestra la miniatura`.
+
+        Los informes incompletos, duplicados, escritos en otro idioma o que mezclen varios problemas se cerrarán sin diagnóstico.
+
+  - type: checkboxes
+    id: requisitos
+    attributes:
+      label: Requisitos obligatorios
+      options:
+        - label: He escrito el título y toda la incidencia en español.
+          required: true
+        - label: He buscado y no existe ya un Issue con el mismo problema.
+          required: true
+        - label: Este Issue contiene un solo problema.
+          required: true
+        - label: No he modificado archivos internos ni instalado paquetes no autorizados.
+          required: true
+
+  - type: dropdown
+    id: apartado
+    attributes:
+      label: Apartado afectado
+      description: Elige la opción más relacionada con el problema.
+      options:
+        - Instalación de la imagen
+        - Bienvenida y primer arranque
+        - Ajustes — Idioma
+        - Ajustes — Perfiles de temperatura
+        - Ajustes — WiFi
+        - Ajustes — NeoPixel
+        - Ajustes — Opciones de energía
+        - Ajustes avanzados e información del sistema
+        - Herramientas — Movimiento
+        - Herramientas — Temperaturas
+        - Herramientas — Filamento
+        - Nivelación y calibraciones
+        - Archivos USB
+        - Inicio de impresión desde la pantalla
+        - Inicio de impresión desde Mainsail
+        - Controles durante la impresión
+        - Pausa y reanudación
+        - Cambio de filamento
+        - Sensor de filamento
+        - Recuperación tras corte eléctrico
+        - Actualizaciones USB
+        - Restauración de fábrica
+        - Mensajes de error y recuperación
+        - Mainsail
+        - No estoy seguro
+    validations:
+      required: true
+
+  - type: dropdown
+    id: modelo
+    attributes:
+      label: Modelo
+      options:
+        - Artillery X4 Pro
+        - Artillery X4 Plus
+    validations:
+      required: true
+
+  - type: input
+    id: imagen
+    attributes:
+      label: Versión de imagen
+      placeholder: JeroMod-Tortillery X4 BETA-01
+    validations:
+      required: true
+
+  - type: input
+    id: versiones
+    attributes:
+      label: Versiones SysLCD y TFT
+      description: Se encuentran en Ajustes avanzados → Info sistema.
+      placeholder: SysLCD v0.0.23 — TFT v0.164
+    validations:
+      required: true
+
+  - type: input
+    id: plataforma
+    attributes:
+      label: eMMC y expansión
+      placeholder: 8 GB, sin expansión / 32 GB, ampliada
+    validations:
+      required: true
+
+  - type: dropdown
+    id: idioma
+    attributes:
+      label: Idioma de la pantalla
+      options:
+        - Español
+        - Inglés
+        - Chino
+        - Francés
+        - Italiano
+        - Ruso
+        - Alemán
+        - Japonés
+    validations:
+      required: true
+
+  - type: input
+    id: pantalla_inicial
+    attributes:
+      label: Pantalla inicial
+      description: Utiliza el título visible en la pantalla.
+      placeholder: Pre-Impresión
+    validations:
+      required: true
+
+  - type: input
+    id: accion
+    attributes:
+      label: Botón, icono u opción utilizada
+      placeholder: Imprimir → Confirmar
+    validations:
+      required: true
+
+  - type: textarea
+    id: pasos
+    attributes:
+      label: Pasos exactos para reproducirlo
+      description: Escribe los pasos en orden desde la pantalla inicial.
+      placeholder: |
+        1. Abrí...
+        2. Pulsé...
+        3. Apareció...
+    validations:
+      required: true
+
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Resultado esperado
+    validations:
+      required: true
+
+  - type: textarea
+    id: real
+    attributes:
+      label: Resultado real
+      description: Incluye la pantalla final y cualquier mensaje exacto.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: frecuencia
+    attributes:
+      label: Frecuencia
+      options:
+        - Ocurre siempre
+        - Ocurre algunas veces
+        - Solo ocurrió una vez
+        - No lo repetí por seguridad
+    validations:
+      required: true
+
+  - type: dropdown
+    id: origen
+    attributes:
+      label: Origen de la acción
+      options:
+        - Pantalla de la impresora
+        - Mainsail
+        - Ambos
+        - No aplica
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: efectos
+    attributes:
+      label: Movimiento, calentamiento o riesgo
+      options:
+        - label: Hubo movimiento.
+        - label: Hubo calentamiento.
+        - label: Existió riesgo térmico o mecánico.
+        - label: Detuve la impresora por seguridad.
+
+  - type: textarea
+    id: evidencias
+    attributes:
+      label: Evidencias y logs
+      description: Añade fotografías, vídeos o logs solo si ayudan. Oculta contraseñas, claves, tokens y datos privados.
+      placeholder: Arrastra aquí los archivos o indica que no están disponibles.
+
+  - type: textarea
+    id: observaciones
+    attributes:
+      label: Observaciones adicionales
+      description: No añadas aquí un segundo problema; abre otro Issue.
