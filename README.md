@@ -128,7 +128,7 @@ SHA-256: 586EED3297EBDC4522E80F3D8E908681B2758531C6C7D0799B92A3EA61BE26FD
 ## 📋 Versiones de la imagen inicial
 
 ```text
-Imagen: JeroMod-Tortillery X4 BETA-01
+Imagen: JeroMod-Tortillery X4 BETA-001
 Firmware base: Tortillery v1.0.5
 Sistema: JeroMod SYS v0.0.23
 Pantalla: JeroMod TFT v0.165
