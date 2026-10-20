@@ -1,6 +1,8 @@
 name: 🐞 Informar de un fallo
 description: Comunica un único problema reproducible de JeroMod-Tortillery X4.
 title: "[FALLO] "
+labels:
+  - bug
 body:
   - type: markdown
     attributes:

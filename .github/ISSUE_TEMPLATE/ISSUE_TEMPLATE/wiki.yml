@@ -1,6 +1,8 @@
 name: 📚 Corregir o mejorar la wiki
 description: Comunica información incorrecta, incompleta o poco clara de la documentación.
 title: "[WIKI] "
+labels:
+  - documentation
 body:
   - type: markdown
     attributes:
