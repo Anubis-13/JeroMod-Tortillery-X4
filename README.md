@@ -31,6 +31,21 @@ responsable de impresiones fallidas, pérdida de configuraciones ni daños
 provocados por una instalación incorrecta, una configuración inadecuada o el
 uso de la impresora sin supervisión.
 
+### Configuraciones personalizadas
+
+Si modificáis `printer.cfg` o `macros.cfg`, guardad una copia de ambos archivos
+antes de utilizar la restauración de fábrica. La opción para restaurar la
+configuración del modelo sustituye los dos archivos y elimina sus
+personalizaciones. Aunque decidáis conservar los perfiles, el restablecimiento
+todavía puede modificar Bed Mesh, el bloque `SAVE_CONFIG` y el color inicial de
+NeoPixel dentro de `printer.cfg`.
+
+Después de restaurar, comparad las copias y recuperad únicamente vuestros
+cambios; no sobrescribáis completamente los archivos nuevos, porque pueden
+contener correcciones necesarias. Consultad la
+[guía de restauración de fábrica](wiki/11-restauracion-fabrica.md) antes de
+continuar.
+
 ### Perfil de laminador
 
 Por ahora **no se proporciona un perfil oficial de laminador** para OrcaSlicer,

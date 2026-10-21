@@ -14,6 +14,26 @@ La restauración se abre desde **Ajustes → Ajustes avanzados → Restaurar**. 
 
 Aunque no se marque un borrado opcional, la restauración devuelve a valores iniciales las preferencias de pantalla, perfiles de temperatura, malla y Z-Offset. Las calibraciones volverán a figurar como pendientes.
 
+## ⚠️ Copia de `printer.cfg` y `macros.cfg`
+
+Si habéis personalizado `printer.cfg` o `macros.cfg`, descargad o copiad ambos
+archivos antes de realizar cualquier restauración.
+
+- **Conservar perfiles:** si no marcáis **Restaurar printer/macros.cfg**, se
+  conserva el modelo seleccionado y no se sustituyen completamente los dos
+  archivos activos. Aun así, la restauración modifica partes de `printer.cfg`:
+  devuelve Bed Mesh a sus valores iniciales, reconstruye el bloque
+  `SAVE_CONFIG` y sincroniza el color inicial de NeoPixel.
+- **Restaurar perfiles/configuración del modelo:** si marcáis **Restaurar
+  printer/macros.cfg**, `printer.cfg` y `macros.cfg` se sustituyen por las
+  versiones base del modelo elegido. Las personalizaciones activas de ambos
+  archivos se perderán y será necesario seleccionar nuevamente el modelo.
+
+Después de restaurar, no sobrescribáis directamente los archivos nuevos con
+vuestras copias antiguas. Comparad las versiones y recuperad únicamente vuestros
+cambios personales, porque los archivos nuevos pueden incluir correcciones
+necesarias del firmware.
+
 ## Cancelar
 
 **Cancelar** regresa a Ajustes avanzados sin borrar información ni reiniciar el sistema.
@@ -35,7 +55,7 @@ No cortéis la alimentación ni toquéis la pantalla durante el proceso.
 
 - Seleccionad el idioma.
 - Si se conservaron los perfiles del modelo, el sistema puede omitir su instalación.
-- Si se restauró `printer/macros.cfg`, elegid nuevamente el modelo físico correcto.
+- Si se restauraron `printer.cfg` y `macros.cfg`, elegid nuevamente el modelo físico correcto.
 - Configurad WiFi si se borraron las redes.
 - Completad Z-Offset, tornillos y malla antes de imprimir.
 
