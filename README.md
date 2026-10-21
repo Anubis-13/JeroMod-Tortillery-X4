@@ -111,7 +111,7 @@ La imagen se distribuirá mediante un enlace externo porque supera el tamaño m�
 
 **Enlace de descarga:**
 
-[AQUÍ LA DESCARGA](https://drive.google.com/file/d/1r7LGBq6CZ-2WhnRB_oMauw3_ysZvVpYi/view?usp=drive_link)
+[AQUÍ LA DESCARGA](https://drive.google.com/file/d/1r7LGBq6CZ-2WhnRB_oMauw3_ysZvVpYi/view?usp=sharing)
 
 
 ## 📋 Datos del archivo publicado:
