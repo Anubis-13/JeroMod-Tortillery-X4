@@ -21,7 +21,7 @@ Esta wiki explica las funciones disponibles en la beta pública. No es una campa
 | `B04` | [Menú de nivel](04-menu-nivel.md) | Z-Offset, tornillos, malla, PID y resonancias |
 | `B05` | [Archivos e inicio de impresión](05-archivos-inicio-impresion.md) | USB, archivos, Pre-Impresión, Mainsail, finalizar y reimprimir |
 | `B06` | [Controles durante la impresión](06-controles-durante-impresion.md) | Velocidad, flujo, ventilador, temperaturas, Z-Offset, LED y consola |
-| `B07` | [Pausa, reanudación y cambio de filamento](07-pausa-reanudacion-filamento.md) | Pausa normal y cambio manual de filamento |
+| `B07` | [Pausa, reanudación y cambio de filamento](07-pausa-reanudacion-filamento.md) | Pausa y botón Cambio de filamento de Mainsail |
 | `B08` | [Sensor de filamento](08-sensor-filamento.md) | Detección, aviso, ignorar, cargar y continuar |
 | `B09` | [Recuperación tras corte eléctrico](09-recuperacion-corte-electrico.md) | PLR, reanudación y descarte de una recuperación |
 | `B10` | [Actualizaciones USB](10-actualizaciones-usb.md) | Instalación, compatibilidad y errores de paquetes `.mksp` |
