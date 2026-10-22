@@ -25,11 +25,19 @@ Una pausa solicitada desde Mainsail debe reflejarse en la pantalla. La reanudaci
 
 ## Cambio de filamento
 
-Cuando el sistema recibe la orden de cambio de filamento —por ejemplo desde el G-code o una macro compatible— espera a que Klipper quede pausado y abre la pantalla correspondiente.
+Durante una impresión activa, Mainsail muestra el botón **Cambio de filamento** en el panel del extrusor. Este botón utiliza internamente `T600`; no es necesario escribir el comando manualmente.
 
-La pantalla permite retirar y cargar filamento con movimientos controlados. Mantened la boquilla a una temperatura adecuada y confirmad que el nuevo filamento sale correctamente antes de continuar.
+Al pulsarlo:
 
-Al finalizar, el sistema ejecuta la secuencia de cierre del cambio, vuelve a la pantalla de impresión y reanuda el trabajo.
+1. Se inicia el cambio de filamento mediante `M600`.
+2. Klipper pausa la impresión y aparta el cabezal.
+3. La pantalla abre la página de cambio de filamento cuando la pausa está preparada.
+4. Podéis retirar el filamento, cargar el nuevo y comprobar que sale correctamente.
+5. Al finalizar, el sistema recupera la temperatura anterior cuando corresponda, vuelve a la pantalla de impresión y reanuda el trabajo.
+
+`T600` solo está disponible mientras el estado sea **Imprimiendo**. Fuera de una impresión activa, el sistema rechazará la orden y mostrará que el cambio no está disponible.
+
+Un cambio solicitado desde el G-code mediante `M600` también utiliza este proceso.
 
 ## Precauciones
 
